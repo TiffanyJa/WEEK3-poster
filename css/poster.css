@@ -11,7 +11,14 @@ html {
     font-family: 'Roboto', sans-serif;;
     color: #151515;
 }
-
+.modal-content {
+    background-color: blanchedalmond;
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+}
 .movie-card {
     margin-top: 5rem;
     height: 800px;
@@ -20,31 +27,14 @@ html {
 
 .movie-title {
     text-transform: uppercase;
-    position: relative;
-    left: -50rem;
-    animation: slide-from-left 3.5s ease-in-out forwards;
 }
 
-@keyframes slide-from-left {
-    80%{left: 1.5rem;}
-    100%{left: 0;}
-}
 
 .movie-poster-container img {
     margin-top: 2rem;
     height: 500px;
     border-radius:20px;
-    position: relative;
-    right: -50rem;
-    animation: slide-from-right 3.5s ease-in-out forwards;
 }
-
-@keyframes slide-from-right {
-    80%{right: 1.5rem;}
-    100%{right: 0;}
-}
-
-
 
 .movie-rating {
     display: inline-block;
@@ -68,12 +58,6 @@ html {
     font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    opacity: 0;
-    animation: fade-in 3.5s ease-in-out forwards;
-    animation-delay: 1;
-}
-@keyframes fade-in {
-    100%{opacity: 1;}
 }
 
 
